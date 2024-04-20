@@ -8,6 +8,8 @@ app = Flask(__name__)
 
 """Define a route for the root URL ('/')"""
 @app.route('/', strict_slashes=False)
+
+
 def hello_hbnb():
     """
     This function handles requests to the root URL ('/').
@@ -17,6 +19,8 @@ def hello_hbnb():
 
 
 @app.route('/hbnb', strict_slashes=False)
+
+
 def display_hbnb():
     return 'HBNB'
 
