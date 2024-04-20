@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-# Import the Flask module
+"""Import the Flask module"""
 from flask import Flask
 
-# Create a Flask app instance
+"""Create a Flask app instance"""
 app = Flask(__name__)
 
 
-# Define a route for the root URL ('/')
+"""Define a route for the root URL ('/')"""
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """
@@ -21,6 +21,7 @@ def display_hbnb():
     return 'HBNB'
 
 
-# Run the app if this script is executed directly
+"""Run the app if this script is executed directly"""
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
