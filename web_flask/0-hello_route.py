@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This is to import Flask
+""" This is to import Flask """
 from flask import Flask
 
 
