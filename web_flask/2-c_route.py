@@ -15,6 +15,7 @@ def hello_hbnb():
     """
     return 'Hello HBNB!'
 
+
 @app.route('/hbnb', strict_slashes=False)
 def display_hbnb():
     """
@@ -23,9 +24,11 @@ def display_hbnb():
     """
     return 'HBNB'
 
+
 @app.route('/c/<text>', strict_slashes=False)
 def c_route(text):
     return "C " + text.replace("_", " ")
+
 
 # Run the app if this script is executed directly
 if __name__ == '__main__':
