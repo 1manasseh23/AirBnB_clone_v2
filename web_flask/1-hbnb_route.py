@@ -1,19 +1,23 @@
 #!/usr/bin/python3
-"""Import the Flask module"""
+""" This module conatins a simple Flask App """
+
 from flask import Flask
 
 app = Flask(__name__)
 
 
-"""Define a route for the root URL ('/')"""
 @app.route('/', strict_slashes=False)
-    return 'Hello HBNB!'
+def hello():
+    """ returns simple string """
+    return f'Hello HBNB!'
+
 
 @app.route('/hbnb', strict_slashes=False)
-def display_hbnb()
-    return 'HBNB'
-	
+def hbnb():
+    """ returns simple string """
+    return f'HBNB'
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-
+    
